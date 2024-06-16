@@ -1,4 +1,4 @@
-import PropTypes from "prop-types"
+// import PropTypes from "prop-types"
 import Contact from '../Contact/Contact'
 import css from './ContactList.module.css'
 import { useSelector } from "react-redux";
@@ -25,14 +25,14 @@ const ContactList = () => {
     );
   };
 
-  ContactList.propTypes = {
-    contacts: PropTypes.arrayOf(
-      PropTypes.shape({
-        id: PropTypes.number.isRequired,
-        name: PropTypes.string.isRequired,
-        number: PropTypes.string.isRequired,
-        onDeleteContact: PropTypes.func.isRequired,
-      })
-    ).isRequired,
-  };
+  // ContactList.propTypes = {
+  //   contacts: PropTypes.arrayOf(
+  //     PropTypes.shape({
+  //       id: PropTypes.number.isRequired,
+  //       name: PropTypes.string.isRequired,
+  //       number: PropTypes.string.isRequired,
+  //       onDeleteContact: PropTypes.func.isRequired,
+  //     })
+  //   ).isRequired,
+  // };
   export default ContactList;

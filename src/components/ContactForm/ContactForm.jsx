@@ -2,9 +2,9 @@ import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { nanoid } from "nanoid";
 import css from "./ContactForm.module.css";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import { useDispatch } from "react-redux";
-import { addContact} from "../../redux/contactsSlice";
+import { addContact} from "../../redux/contactsOps";
 
 
 const ContactSchema = Yup.object().shape({
@@ -73,8 +73,8 @@ const ContactSchema = Yup.object().shape({
     };
 
     
-ContactForm.propTypes = {
-  onAddContact: PropTypes.func.isRequired,
-  };
+// ContactForm.propTypes = {
+//   onAddContact: PropTypes.func.isRequired,
+//   };
   
   export default ContactForm;
